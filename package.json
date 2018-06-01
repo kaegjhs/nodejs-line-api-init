@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A nodejs express api and Line API.",
   "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha -R tests/**/*.test.js && codecov -t 0b8ff5d5-d015-43be-ac62-15971efb4861"
+  },
   "private": true,
   "repository": {
     "type": "git",
@@ -24,6 +27,10 @@
   },
   "devDependencies": {
     "request": "^2.81.0",
-    "tape": "^4.7.0"
+    "tape": "^4.7.0",
+    "codecov": "^3.0.2",
+    "expect.js": "^0.3.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
   }
 }
