@@ -1,4 +1,7 @@
 # nodejs-line-api-init
+[![Build Status](https://travis-ci.com/pamontep/nodejs-line-api-init.svg?branch=master)](https://travis-ci.com/pamontep/nodejs-line-api-init)
+
+[![codecov](https://codecov.io/gh/pamontep/nodejs-line-api-init/branch/master/graph/badge.svg)](https://codecov.io/gh/pamontep/nodejs-line-api-init)
 
 A nodejs express api and Line API.
 
