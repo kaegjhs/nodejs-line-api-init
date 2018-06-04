@@ -16,9 +16,9 @@ const headers = {
 
 class LineAPIService {
 	constructor() {
-        if (lineAPI != null) {
-            this.apiToken = lineAPI.apiToken;
-            this.apiRoute = lineAPI.apiRoute;
+        if (lineAPI != null && typeof lineAPI.devLineAPIConf != 'undefined') {
+            this.apiToken = lineAPI.devLineAPIConf.apiToken;
+            this.apiRoute = lineAPI.devLineAPIConf.apiRoute;
         }
     }
     
