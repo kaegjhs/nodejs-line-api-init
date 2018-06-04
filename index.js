@@ -14,7 +14,7 @@ const lineMessaging = require('./src/classes/line-messaging');
 server()
     .use(bodyParser.json())
     .use(bodyParser.urlencoded({ extended: false}))
-    .get('/', (req, res) => res.send(`Hi there! This is a nodejs-line-api running on PORT: ${ PORT }`))
+    .get('/', (req, res) => res.send(`Hi there! This is a nodejs-line-api-init running on PORT: ${ PORT }`))
     .post('/webhook', function (req, res) {
         let replyToken = req.body.events[0].replyToken;
         let message = req.body.events[0].message.text;
