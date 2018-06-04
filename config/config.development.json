@@ -1,0 +1,27 @@
+{
+    "api": {
+        "name": "nodejs-line-api-init API (Development)",
+        "protocol": "https",
+        "host": "127.0.0.1",
+        "port": 8443,
+        "cors": {
+            "origin": "https://localhost:8443",
+            "credentials": true
+        }
+    },
+    "database": {
+        "username": "root",
+        "password": "password",
+        "name": "test_development",
+        "database": "test_development",
+        "host": "127.0.0.1",
+        "port": 3306,
+        "dialect": "mysql",
+        "engine": "InnoDB",
+        "charset": "utf8"
+    },
+    "lineAPI": {
+        "channelToken": "YSBwEd4ftfY9CUMyMqXzs9AbVNqbV5eWBX3uUwVvL74iD0ksGcOo5Cii1UcRo0IK2Rglp9Spqr4ZUB7t5QtGo0S+XwPiMXwl3jEHkfC4NAk4EhYuyDzESDjfU7IdFQW6EPSsOEzggvTQd2gK26K3sQdB04t89/1O/w1cDnyilFU=",
+        "apiHost": "https://api.line.me/v2/bot/message/reply"
+    }
+}
