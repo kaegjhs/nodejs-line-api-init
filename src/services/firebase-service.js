@@ -6,8 +6,35 @@
  * @desc A service for Get/Post data from Firebase Realtime Database.
 */
 
+const firebase = require('firebase-admin');
+const serviceAccount = require('../../test-line-api-e73a3-firebase.json');
+var db, ref;
+
 class FirebaseService {
 	constructor() {
+        firebase.initializeApp({
+			credential: firebase.credential.cert(serviceAccount),
+			databaseURL: 'https://test-line-api-e73a3.firebaseio.com/'
+		});
+
+		db = firebase.database();
+
+		ref = db.ref('eat');
     }
-    
+
+    getHogwartHouses() {
+        return new Promise(function (resolve, reject) {
+            try {
+                return ref.once('value', function(snapshot) {
+                    let _eat = snapshot.val();
+
+                    return resolve(JSON.stringify(_hogwarts));
+                });
+            }
+            catch (e) {
+                return reject(e);
+            }
+        });
+    }   
 }
+module.exports = new FirebaseService();
