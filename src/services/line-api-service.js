@@ -7,8 +7,8 @@
 */
 const request = require('request');
 const lineAPI = require('../../config/config');
-const apiToken = '';
-const apiRoute = '';
+const apiToken = '+sDtl9F1rGQZKiRMomzyXbJHY9ktfzCC5OOvs4RMNqswHTjJd4RdABYr3yoQ21f53MLueTPcfSt9JpgZtekQP87g/zaKxic9TaNp9yK3ab0TdoCoI+fJIvCJnM7xBwnsHswCt0jGQSkjeo1QJbZ5wAdB04t89/1O/w1cDnyilFU=';
+const apiRoute = 'https://api.line.me/v2/bot/message/reply';
 const headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer ' + apiToken
